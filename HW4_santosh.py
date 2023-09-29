@@ -11,7 +11,7 @@ st.header("CMSE 830")
 st.header("Hello this is santosh Chhetri, this is my website")
 sns.set()
 
-df = pd.read_csv("C:/Users/chhet/Downloads/CMSE 830/drug_use_by_age.csv")
+df = pd.read_csv("drug_use_by_age.csv")
 
 
 st.header("Here is the preview of the drug use by age data set")
