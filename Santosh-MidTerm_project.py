@@ -148,10 +148,11 @@ elif sd1 == 'Distribution plot - Violin and box plots':
         ' in identifying the central tendency, spread, and any potential outliers in the data.'
     )
     y_label = st.sidebar.selectbox('Select the dataset to see the plots: ', selected_columns[:-1])
+    custom_palette={"teens": "blue", "twentees": "green", "middle_age":"yellow", "senior_age":"red"}
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 10))
-    sns.violinplot(data=df, y=y_label, x="Age-group-use", ax=ax1)
+    sns.violinplot(data=df, y=y_label, x="Age-group-use", ax=ax1, palette=custom_palette)
     ax1.set_title("Violin Plot")
-    sns.boxplot(data=df, y=y_label, x="Age-group-use", ax=ax2)
+    sns.boxplot(data=df, y=y_label, x="Age-group-use", ax=ax2,palette=custom_palette)
     ax2.set_title("Box Plot")
     plt.subplots_adjust(hspace=0.5)
 elif sd1 == "Distribution plot - KDE":
