@@ -3,3 +3,4 @@ seaborn
 pandas
 altair
 plotly.express
+hiplot
