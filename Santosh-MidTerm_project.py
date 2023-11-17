@@ -8,9 +8,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import hiplot as hip
 
-st.title("CMSE 830 - Foundation of Data Science")
+st.title("Data Visualization on Drug on different age groups")
 
-st.markdown("### Mid-Term Project - Santosh Chhetri", unsafe_allow_html=True)
+#st.markdown("### Mid-Term Project - Santosh Chhetri", unsafe_allow_html=True)
 
 image = "drug-use.png"
 st.image(image, caption="Picture credit- Internet", use_column_width=False, width=900)
