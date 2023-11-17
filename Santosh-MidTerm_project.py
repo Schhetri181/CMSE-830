@@ -8,7 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import hiplot as hip
 
-st.title("Data Visualization on Drug use by different age groups")
+st.title("Data Visualization on Drug use by different age group")
 
 #st.markdown("### Mid-Term Project - Santosh Chhetri", unsafe_allow_html=True)
 
@@ -83,7 +83,7 @@ if sd1 == "Age Vs drug use data":
         y=y_label,
         tooltip=[x_label, y_label],
     ).interactive()
-    alt_chart = alt_chart.configure_axis(gridOpacity=0.75)
+    #alt_chart = alt_chart.configure_axis(gridOpacity=0.75)
     st.altair_chart(alt_chart, use_container_width=True)
 
 elif sd1 == "Regression plot":
