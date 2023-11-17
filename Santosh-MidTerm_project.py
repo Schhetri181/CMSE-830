@@ -84,7 +84,7 @@ if sd1 == "Age Vs drug use data":
         tooltip=[x_label, y_label],
     ).interactive()
     #alt_chart = alt_chart.configure_axis(gridOpacity=0.75)
-    st.altair_chart(alt_chart, use_container_width=True)
+    #st.altair_chart(alt_chart, use_container_width=True)
 
 elif sd1 == "Regression plot":
     st.write(
