@@ -8,7 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import hiplot as hip
 
-st.title("Data Visualization on Drug on different age groups")
+st.title("Data Visualization on Drug use by different age groups")
 
 #st.markdown("### Mid-Term Project - Santosh Chhetri", unsafe_allow_html=True)
 
