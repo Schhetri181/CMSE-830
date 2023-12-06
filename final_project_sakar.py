@@ -1,4 +1,4 @@
-#My link to the project is: 
+#My link to the project is:
 #MY link to my GitHub repository is: 
 import streamlit as st
 import altair as alt
@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 st.set_option('deprecation.showPyplotGlobalUse', False)
 #********************************************************************************************************
 st.set_page_config(page_title="Kicker Impact Analysis", layout="wide")
-fg_data = pd.read_excel('nfl_data.xlsx')
+fg_data = pd.read_csv('nfl_data.csv')
 fg_data = fg_data.dropna()
 
 #********************************************************************************************************
