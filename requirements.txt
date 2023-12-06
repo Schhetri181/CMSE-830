@@ -4,3 +4,7 @@ pandas
 altair
 plotly.express
 hiplot
+plotly
+matplotlib
+statsmodel
+statistics
