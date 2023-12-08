@@ -15,7 +15,7 @@ fg_data = pd.read_csv('nfl_data.csv')
 fg_data = fg_data.dropna()
 
 #********************************************************************************************************
-menu = st.sidebar.radio("Jump to", ["Background", "About the Data", "Analysis Methodology","Predictions"], key="tabs")
+menu = st.sidebar.radio("Jump to", ["Background", "About the Data", "Analysis Methodology","Predictions","About Me"], key="tabs")
 #********************************************************************************************************
 if menu == "Background":
     st.markdown('# Assessing the Field Goal Performance of NFL Kickers in 2- Minute Drives')
@@ -149,4 +149,8 @@ if menu == "Predictions":
     input_data = [[goal_to_go, kick_distance, timeouts_remaining, home_game, half_seconds_remaining, down, score_differential, ydstogo]]
     probability = model.predict_proba(input_data)[0, 1]
     st.write(f"Probability of {selected_kicker} making the field goal: {probability:.2f}")
-
+#********************************************************************************************************
+if menu == "About Me":
+    st.markdown("Hi! I am Sakar Pahari, 3rd year PhD Student in the Department of Civil and Environmental Engineering")
+    st.markdown("Research Interests: Highway Safety, Traffic Control Devices, Highway Design, Mobility")
+    st.markdown("Hobbies: Lifting weights, watching NFL (obviously) and various other sports, Traveling, and Trekking")
