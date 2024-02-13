@@ -15,8 +15,7 @@ st.title("Data Visualization on Drug use by different age group")
 image = "drug-use.png"
 st.image(image, caption="Picture credit- Internet", use_column_width=False, width=900)
 
-''''
-st.write(
+# st.write(
     'Drug use seems like a consistent problem all across the US with no end in sight. Its a constant point of note'
     'in daily news.Substance misuse, including the abuse of prescription medications, illicit drugs, and alcohol, '
     'is widespread and has far-reaching consequences. Health issues, addiction, overdose, and mental health disorders'
@@ -25,7 +24,6 @@ st.write(
     'demographics especially age. Through a thorough understanding of how drug use is different across various '
     'demographics we can create targeted programs to support people through their troubles of drug use.'
 )
-''''
 
 df = pd.read_csv("drug_use_by_age.csv")
 
