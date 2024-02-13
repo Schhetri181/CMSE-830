@@ -146,7 +146,7 @@ st.write(
         ' includes the median (center line). '
     )
     
-    st.markdown("### Box Plot")
+st.markdown("### Box Plot")
  
 st.write(
         'Box plot, also known as a box-and-whisker plot, provides a more concise summary of the data '
