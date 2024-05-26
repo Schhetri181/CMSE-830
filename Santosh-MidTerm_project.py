@@ -15,7 +15,15 @@ st.markdown("### Mid-Term Project - Santosh Chhetri", unsafe_allow_html=True)
 image = "drug-use.png"
 st.image(image, caption="Picture credit- Internet", use_column_width=False, width=900)
 
-
+st.write(
+    'Drug use seems like a consistent problem all across the US with no end in sight. Its a constant point of note'
+    'in daily news.Substance misuse, including the abuse of prescription medications, illicit drugs, and alcohol, '
+    'is widespread and has far-reaching consequences. Health issues, addiction, overdose, and mental health disorders'
+    ' are common outcomes of drug use. However, there is a lack of proper analysis to understand the extent of the '
+    'problem where it affects people the worst. Through this project, I try to understand drug use by different '
+    'demographics especially age. Through a thorough understanding of how drug use is different across various '
+    'demographics we can create targeted programs to support people through their troubles of drug use.'
+)
 
 df = pd.read_csv("drug_use_by_age.csv")
 
